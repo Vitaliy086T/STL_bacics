@@ -31,10 +31,12 @@ int main(){
         [](const Employee& a, const Employee& b){
             return a.department < b.department;
         });
+
     stable_sort(employees.begin(), employees.end(),
         [](const Employee& a, const Employee& b){
             return a.salary < b.salary;
         });
+    
     printAll(employees);
     return 0;
 }

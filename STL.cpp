@@ -33,7 +33,7 @@ int main(){
     s.insert(2); //s = {1, 2, 3} //ms = {1, 1, 2, 2, 3}
 
     //map and multimap
-    map <string, int> m = {{"apple", 2}, {"banana", 3}}; //pair of keys and values
+    map <string, int> m = {{"banana", 10}, {"apple", 3}}; //pair of keys and values
     m["orange"] = 4;
     for (const auto& pair : m){
         cout << pair.first << " " << pair.second << " ";
@@ -48,10 +48,11 @@ int main(){
     //Algorithms (need #include <iterator> and <algorithm>)
 
     //find - search elements
-    int it1 = find(v.begin(), v.end(), 3); //true
+    find(v.begin(), v.end(), 3); //true
     //sort
-    int it2 = sort(d.begin(), d.end()); //d now = {9, 11}
+    sort(d.begin(), d.end()); //d now = {9, 11}
     //copy
-    copy
+    list <int> l2(2);
+    copy(l.begin(), l.end(), l2.begin());
     return 0;
 }
